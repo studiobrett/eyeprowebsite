@@ -50,8 +50,8 @@ export function Header() {
             <Image
               src="/images/eyepro-logo.webp"
               alt="Eyepro"
-              width={500}
-              height={346}
+              width={986}
+              height={600}
               className="h-14 lg:h-20 w-auto"
               priority
             />

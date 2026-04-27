@@ -16,8 +16,8 @@ export function Footer() {
               <Image
                 src="/images/eyepro-logo.webp"
                 alt="Eyepro"
-                width={500}
-                height={346}
+                width={986}
+                height={600}
                 className="h-14 w-auto"
               />
             </Link>

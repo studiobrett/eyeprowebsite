@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Trusted optometrists serving Virginia and South Carolina. Comprehensive eye exams, contact lenses, LASIK co-management, and more.',
     url: siteUrl,
     siteName: 'Eyepro',
-    images: [{ url: '/images/eyepro-logo.webp', width: 500, height: 346, alt: 'Eyepro' }],
+    images: [{ url: '/images/eyepro-logo.webp', width: 986, height: 600, alt: 'Eyepro' }],
     locale: 'en_US',
     type: 'website',
   },
