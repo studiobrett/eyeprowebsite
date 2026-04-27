@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { MapPin, Phone, Clock, ArrowRight } from 'lucide-react';
-import { virginiaLocations, southCarolinaLocations } from '@/data/locations';
+import { locations, virginiaLocations, southCarolinaLocations } from '@/data/locations';
+import { JsonLd } from '@/components/JsonLd';
+import { locationSchema } from '@/lib/schema';
 
 export const metadata = {
   title: 'Locations | Eyepro',
@@ -73,6 +75,7 @@ function LocationCard({ location }: { location: typeof virginiaLocations[0] }) {
 export default function LocationsPage() {
   return (
     <div className="py-12">
+      <JsonLd data={locations.map(locationSchema)} />
       <div className="container-wide">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Our Locations</h1>

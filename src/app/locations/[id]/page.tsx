@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { MapPin, Phone, Clock, ExternalLink } from 'lucide-react';
 import { locations, getLocation } from '@/data/locations';
+import { JsonLd } from '@/components/JsonLd';
+import { locationSchema } from '@/lib/schema';
 
 export function generateStaticParams() {
   return locations.map((location) => ({
@@ -28,6 +30,7 @@ export default function LocationPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="py-12">
+      <JsonLd data={locationSchema(location)} />
       <div className="container-narrow">
         <div className="mb-8">
           <Link href="/locations" className="text-eyepro-blue hover:underline">

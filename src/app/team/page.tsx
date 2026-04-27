@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { team } from '@/data/team';
+import { JsonLd } from '@/components/JsonLd';
+import { physicianSchema } from '@/lib/schema';
 
 export const metadata = {
   title: 'Our Team | Eyepro',
@@ -9,6 +11,7 @@ export const metadata = {
 export default function TeamPage() {
   return (
     <div className="py-12">
+      <JsonLd data={team.map(physicianSchema)} />
       <div className="container-narrow">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Our Team</h1>
