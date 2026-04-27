@@ -46,14 +46,10 @@ export default function AccessibilityPage() {
             <p className="text-slate-700">
               If you encounter a part of this website that is difficult to use, please let us know so
               we can address it. You can reach us by phone at any of our office locations listed on the{' '}
-              <a href="/locations" className="text-eyepro-blue hover:underline">Locations page</a>, or
-              by email at{' '}
-              <a href="mailto:eyeprousa@gmail.com" className="text-eyepro-blue hover:underline">
-                eyeprousa@gmail.com
-              </a>.
+              <a href="/locations" className="text-eyepro-blue hover:underline">Locations page</a>.
             </p>
             <p className="text-slate-700 mt-3">
-              When reporting an issue, please include the page URL, a description of the problem, and
+              When reporting an issue, please mention the page URL, a description of the problem, and
               the device and browser you are using if possible.
             </p>
           </section>

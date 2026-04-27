@@ -27,31 +27,25 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-bold mb-3">Information We Collect</h2>
             <p className="text-slate-700 mb-3">
-              When you use this website, we may collect:
+              This website does not include online contact forms. The only information collected
+              automatically by the site is basic technical information your browser sends (such as IP
+              address, device type, and pages visited).
             </p>
-            <ul className="list-disc pl-6 space-y-1 text-slate-700">
-              <li>Information you submit through our contact form (such as your name, email, phone number, and message).</li>
-              <li>Basic technical information your browser sends automatically (such as IP address, device type, and pages visited).</li>
-            </ul>
             <p className="text-slate-700 mt-3">
-              <strong>Please do not include protected health information (PHI) in messages submitted through
-              this website.</strong> The contact form is not a secure channel for medical information. To
-              discuss specific health concerns, please call the office directly.
+              All patient communication takes place in person at our offices or by phone using the
+              numbers listed on our{' '}
+              <a href="/locations" className="text-eyepro-blue hover:underline">Locations page</a>.
+              Information shared during in-office visits is governed by our HIPAA Notice of Privacy
+              Practices.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold mb-3">How We Use Information</h2>
-            <p className="text-slate-700 mb-3">
-              We use the information collected to:
-            </p>
-            <ul className="list-disc pl-6 space-y-1 text-slate-700">
-              <li>Respond to your inquiries.</li>
-              <li>Schedule appointments when requested.</li>
-              <li>Improve the website and our services.</li>
-            </ul>
-            <p className="text-slate-700 mt-3">
-              We do not sell your personal information.
+            <p className="text-slate-700">
+              Technical information collected by the site is used to keep the website running
+              reliably and to understand how visitors use it. We do not sell or share personal
+              information collected through this website.
             </p>
           </section>
 

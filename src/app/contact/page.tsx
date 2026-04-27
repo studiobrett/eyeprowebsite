@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Phone, Clock, Mail } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 import { locations } from '@/data/locations';
 
 export const metadata = {
@@ -15,31 +15,8 @@ export default function ContactPage() {
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
           <p className="text-slate-600 max-w-2xl mx-auto">
             Have questions or ready to schedule an appointment?
-            Reach out to any of our locations.
+            Call any of our locations directly.
           </p>
-        </div>
-
-        {/* General email contact */}
-        <div className="bg-white border rounded-xl p-6 shadow-sm mb-12 max-w-3xl mx-auto">
-          <div className="flex items-start gap-4">
-            <Mail className="w-6 h-6 text-eyepro-blue flex-shrink-0 mt-1" />
-            <div className="flex-1">
-              <h2 className="text-xl font-bold mb-2">General Inquiries</h2>
-              <p className="text-slate-600 text-sm mb-3">
-                For non-urgent questions, you can email us at{' '}
-                <a
-                  href="mailto:eyeprousa@gmail.com?subject=Website%20Inquiry"
-                  className="text-eyepro-blue font-medium hover:underline"
-                >
-                  eyeprousa@gmail.com
-                </a>
-                . For appointments and time-sensitive questions, please call the location directly.
-              </p>
-              <p className="text-xs text-slate-500">
-                Please do not include sensitive health information in email. Email is not a secure channel for medical information.
-              </p>
-            </div>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
