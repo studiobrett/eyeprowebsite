@@ -1,0 +1,34 @@
+import type { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import './globals.css';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+
+const montserrat = Montserrat({ 
+  subsets: ['latin'], 
+  variable: '--font-montserrat',
+  weight: ['400', '500', '600', '700'],
+});
+
+export const metadata: Metadata = {
+  title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
+  description: 'Trusted optometrists serving Virginia and South Carolina. Comprehensive eye exams, contact lenses, LASIK co-management, and more. Conveniently located inside Walmart.',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={`${montserrat.variable} font-sans antialiased`}>
+        <Header />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
