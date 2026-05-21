@@ -33,9 +33,6 @@ export default function ContactPage() {
                   <div>
                     <p>{location.address}</p>
                     <p>{location.city}, {location.state} {location.zip}</p>
-                    {location.insideWalmart && (
-                      <p className="text-sm text-slate-500 mt-1">Inside Walmart</p>
-                    )}
                   </div>
                 </div>
 

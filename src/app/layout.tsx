@@ -19,7 +19,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eyeprova.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
-  description: 'Trusted optometrists serving Virginia and South Carolina. Comprehensive eye exams, contact lenses, LASIK co-management, and more. Conveniently located inside Walmart.',
+  description: 'Trusted optometrists serving Virginia and South Carolina. Comprehensive eye exams, contact lenses, LASIK co-management, and more. Conveniently located in Haymarket, Winchester & Georgetown.',
   openGraph: {
     title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
     description: 'Trusted optometrists serving Virginia and South Carolina. Comprehensive eye exams, contact lenses, LASIK co-management, and more.',

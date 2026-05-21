@@ -12,7 +12,6 @@ export interface Location {
     [key: string]: string;
   };
   googleMapsUrl?: string;
-  insideWalmart: boolean;
   region: 'virginia' | 'south-carolina';
 }
 
@@ -36,7 +35,6 @@ export const locations: Location[] = [
       'Sunday': 'Closed',
     },
     googleMapsUrl: 'https://maps.google.com/?q=6530+Trading+Square+Haymarket+VA+20169',
-    insideWalmart: true,
     region: 'virginia',
   },
   {
@@ -58,7 +56,6 @@ export const locations: Location[] = [
       'Sunday': 'Closed',
     },
     googleMapsUrl: 'https://maps.google.com/?q=501+Walmart+Drive+Winchester+VA+22603',
-    insideWalmart: true,
     region: 'virginia',
   },
   {
@@ -80,7 +77,6 @@ export const locations: Location[] = [
       'Sunday': 'Closed',
     },
     googleMapsUrl: 'https://maps.google.com/?q=1334+N+Fraser+St+Georgetown+SC+29440',
-    insideWalmart: true,
     region: 'south-carolina',
   },
 ];

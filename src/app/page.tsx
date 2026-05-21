@@ -115,7 +115,7 @@ export default function HomePage() {
                 <MapPin className="w-8 h-8 text-eyepro-blue" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Convenient Locations</h3>
-              <p className="text-slate-600">Three Walmart Vision Center locations across two states</p>
+              <p className="text-slate-600">Three convenient locations across Virginia and South Carolina</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-eyepro-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">

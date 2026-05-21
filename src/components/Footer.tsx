@@ -23,7 +23,7 @@ export function Footer() {
             </Link>
             <p className="text-sm">
               Trusted eye care serving Virginia and South Carolina. 
-              Conveniently located inside Walmart Vision Centers.
+              Conveniently located in Virginia and South Carolina.
             </p>
           </div>
 

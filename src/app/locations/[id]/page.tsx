@@ -17,7 +17,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   
   return {
     title: `${location.name}, ${location.stateAbbr} Eye Doctor | Eyepro`,
-    description: `Visit Eyepro in ${location.city}, ${location.state}. Comprehensive eye exams, contact lenses, and more. Located inside Walmart at ${location.address}.`,
+    description: `Visit Eyepro in ${location.city}, ${location.state}. Comprehensive eye exams, contact lenses, and more. Conveniently located at ${location.address}.`,
   };
 }
 
@@ -44,10 +44,7 @@ export default function LocationPage({ params }: { params: { id: string } }) {
               {location.state}
             </span>
           </div>
-          <h1 className="text-4xl font-bold mb-2">Eyepro {location.name}</h1>
-          {location.insideWalmart && (
-            <p className="text-slate-500 mb-8">Inside Walmart Vision Center</p>
-          )}
+          <h1 className="text-4xl font-bold mb-8">Eyepro {location.name}</h1>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Info */}

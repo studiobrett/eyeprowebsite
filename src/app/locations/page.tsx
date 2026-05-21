@@ -21,9 +21,6 @@ function LocationCard({ location }: { location: typeof virginiaLocations[0] }) {
           <div>
             <p>{location.address}</p>
             <p>{location.city}, {location.stateAbbr} {location.zip}</p>
-            {location.insideWalmart && (
-              <p className="text-sm text-slate-500 mt-1">Inside Walmart</p>
-            )}
           </div>
         </div>
 
@@ -80,7 +77,7 @@ export default function LocationsPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Our Locations</h1>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Conveniently located inside Walmart Vision Centers in Virginia and South Carolina. 
+            Conveniently located in Virginia and South Carolina.
             Find the location nearest you.
           </p>
         </div>
