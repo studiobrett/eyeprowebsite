@@ -1,5 +1,5 @@
 import { Phone } from 'lucide-react';
-import { insurances, insuranceNote } from '@/data/insurance';
+import { insurances } from '@/data/insurance';
 import { locations } from '@/data/locations';
 
 export const metadata = {
@@ -19,14 +19,16 @@ export default function InsurancePage() {
         </div>
 
         <div className="bg-white border rounded-xl p-8 shadow-sm mb-8">
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8">
-            <p className="text-amber-800 font-medium">{insuranceNote}</p>
-          </div>
+          <p className="text-slate-600 mb-8">
+            We accept Medicare and select plans from the carriers listed below. Coverage varies
+            by location and plan — please call us before your visit to confirm your specific
+            plan is accepted.
+          </p>
 
           <h2 className="text-2xl font-bold mb-6">Accepted Insurance Plans</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {insurances.map((insurance) => (
-              <div 
+              <div
                 key={insurance}
                 className="bg-slate-50 rounded-lg p-4 text-center font-medium"
               >
@@ -36,8 +38,9 @@ export default function InsurancePage() {
           </div>
 
           <p className="text-slate-600 mt-6 text-sm">
-            Don't see your insurance listed? Contact us to verify your coverage. 
-            We're happy to help you understand your benefits.
+            We do not accept Medicaid, however we are committed to making care accessible and
+            will always do our best to work with you on affordable options. Don&apos;t see your
+            insurance listed? Reach out and we&apos;ll help you understand your options.
           </p>
         </div>
 
