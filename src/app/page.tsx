@@ -15,14 +15,15 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-eyepro-blue to-slate-800 text-white">
         <div className="container-wide py-16 lg:py-24">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Eye Care You Can Trust
+          <div className="max-w-4xl">
+            <p className="text-lg font-semibold text-slate-300 mb-3 tracking-wide">
+              Experience the Difference
+            </p>
+            <h1 className="text-5xl lg:text-7xl font-bold mb-4 leading-tight">
+              Family-Owned<br />Community Eye Care
             </h1>
-            <p className="text-xl text-slate-200 mb-8">
-              Welcome to Eyepro, where we make healthy vision simple, accessible, and personalized. 
-              With over 30 years of experience, our optometrists are proud to serve communities 
-              across Virginia and South Carolina.
+            <p className="text-xl italic text-slate-300 mb-8">
+              See more clearly. Live more fully.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
