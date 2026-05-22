@@ -71,7 +71,11 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-8 pt-6 pb-4 text-sm text-slate-400 flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
-          <Star className="w-4 h-4 fill-amber-400 text-amber-400 flex-shrink-0" />
+          <span className="flex gap-0.5 flex-shrink-0">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+            ))}
+          </span>
           <span>Love your experience? Leave us a review:</span>
           <span className="flex gap-3 flex-wrap justify-center">
             {locations.filter(l => l.reviewUrl).map((location) => (
