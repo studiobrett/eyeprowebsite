@@ -10,6 +10,7 @@ export const insurances = [
   'Spectera',
   'Davis Vision',
   'Superior Vision',
+  'National Vision Administrators (NVA)',
 ];
 
 export const insuranceNote = 'Please note, we do not accept Medicaid. However, we do accept Medicare.';
