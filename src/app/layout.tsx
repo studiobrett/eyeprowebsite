@@ -19,10 +19,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eyeprova.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
-  description: 'Trusted optometrists serving Virginia and South Carolina. Comprehensive eye exams, contact lenses, LASIK co-management, and more. Conveniently located in Haymarket, Winchester & Georgetown.',
+  description: 'Eyepro offers expert medical eye care across Virginia and South Carolina, providing comprehensive eye exams and eye disease treatment for patients of all ages.',
   openGraph: {
     title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
-    description: 'Trusted optometrists serving Virginia and South Carolina. Comprehensive eye exams, contact lenses, LASIK co-management, and more.',
+    description: 'Eyepro offers expert medical eye care across Virginia and South Carolina, providing comprehensive eye exams and eye disease treatment for patients of all ages.',
     url: siteUrl,
     siteName: 'Eyepro',
     images: [{ url: '/images/eyepro-logo.webp', width: 986, height: 600, alt: 'Eyepro' }],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
-    description: 'Trusted optometrists serving Virginia and South Carolina.',
+    description: 'Eyepro offers expert medical eye care across Virginia and South Carolina, providing comprehensive eye exams and eye disease treatment for patients of all ages.',
     images: ['/images/eyepro-logo.webp'],
   },
 };

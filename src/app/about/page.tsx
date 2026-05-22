@@ -14,81 +14,93 @@ export default function AboutPage() {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Who We Are</h1>
-          <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
-            Eyepro was founded on a simple belief: that every person who walks through our door
-            deserves real, honest, medical-grade eye care — regardless of their age, background,
-            or insurance status. We are a team of optometrists and staff who chose this work
-            because we care about people. Not products. Not quotas. People.
-          </p>
+          <h1 className="text-4xl font-bold mb-6">Who We Are</h1>
+          <div className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed space-y-4">
+            <p>
+              When Eyepro opened in 2011, it was built around a clear vision: that patients
+              deserved to really experience a difference in their eye care.
+            </p>
+            <p>
+              Coming from a LASIK background, Dr. Goerl knew he wanted to offer comprehensive
+              medical eye care — the kind that ensures every patient receives innovative,
+              person-centered care. He understood that medical eye care services were the future
+              of optometry, and he made the decision to build a practice around that conviction
+              — not just for long-term success, but for the communities he wanted to serve.
+            </p>
+          </div>
         </div>
 
         <div className="space-y-6">
 
-          {/* Our Story */}
+          {/* Growing Essential Services */}
           <div className="bg-white border rounded-xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold mb-4">Our Story</h2>
-            <p className="text-slate-600 leading-relaxed">
-              In 2011, Dr. Daniel Goerl opened the first Eyepro location in the Northern Virginia
-              community where he raised his family. Having spent years working alongside
-              ophthalmologists in LASIK and refractive surgery, he saw firsthand how transformative
-              thorough, medically-minded eye care could be — and how underserved everyday
-              communities were when it came to that level of care. He wanted to change that. So he
-              built a practice that would. Today Eyepro operates locations across Virginia and South
-              Carolina, each one grounded in the same founding principle: treat every patient
-              like family.
-            </p>
+            <h2 className="text-2xl font-bold mb-4">Growing Essential Services in Our Community</h2>
+            <div className="text-slate-600 leading-relaxed space-y-4">
+              <p>
+                Eyepro opened its first location in the Northern Virginia community where Dr. Goerl
+                raised his family. After establishing himself as a reputable optometrist and working
+                alongside ophthalmologists in LASIK and refractive surgery patient management, he
+                wanted to create a practice with an atmosphere best fit for a growing community's
+                needs — one that would make a positive difference for future generations.
+              </p>
+              <p>
+                The ability to choose the "how" and the "why" of serving the community is what
+                motivates the Eyepro team to continue doing what they love: putting patients first.
+              </p>
+              <p>
+                Eyepro sees and takes care of all patients — young and old, with insurance or
+                without. The team will always do its best to navigate the specific circumstances of
+                each patient to ensure everyone receives the care they need and deserve. The goal is
+                to provide affordable, accessible, and quality eye care to anybody and everybody who
+                walks through the door — and to treat each person as family. Eyepro is trying to
+                connect with the heart of every type of community.
+              </p>
+            </div>
           </div>
 
-          {/* How We Practice */}
-          <div className="bg-white border rounded-xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold mb-4">How We Practice</h2>
-            <p className="text-slate-600 leading-relaxed">
-              We practice with a medical mindset. That means we invest in advanced diagnostic
-              technology — including OCT imaging, fundus photography, and anterior and posterior
-              segment evaluation — so our doctors can detect and manage conditions like glaucoma,
-              diabetic retinopathy, and macular degeneration early, when it matters most. We see
-              patients of all ages, work with most insurance plans, and will always do our best to
-              navigate your specific situation. We do not sell eyewear. Our only interest is in the
-              health of your eyes and the clarity of your vision.
-            </p>
-          </div>
-
-          {/* Our Setting */}
+          {/* A Competitive Edge */}
           <div className="bg-slate-50 rounded-xl p-8">
-            <h2 className="text-2xl font-bold mb-4">Our Setting</h2>
-            <p className="text-slate-600 leading-relaxed">
-              Our locations are situated alongside retail optical and vision centers, which allows
-              us to focus entirely on what we do best — comprehensive medical eye exams. Patients
-              who need optical services are well served by our neighbors, while we remain focused
-              on your eye health. It is a relationship that works well for the community.
-            </p>
+            <h2 className="text-2xl font-bold mb-4">A Competitive Edge Rooted in Care</h2>
+            <div className="text-slate-600 leading-relaxed space-y-4">
+              <p>
+                Eyepro&apos;s edge over other independent practices comes from the value placed on
+                person-centered ethics and care.
+              </p>
+              <p>
+                Doctors and staff alike are hospitable, knowledgeable, personable, and empathetic.
+                The relationship between the doctor and the office manager at each location is
+                incredibly important to ensuring every patient receives a very real and human
+                experience. Eyepro would not be where it is today without its team and the family
+                culture built around them.
+              </p>
+              <p>
+                Each location operates with autonomy, empowering managers and doctors to make the
+                best judgments on any situation that arises — always within the framework of
+                Eyepro&apos;s person-centered ethical standards.
+              </p>
+            </div>
           </div>
 
-          {/* Our Team */}
+          {/* Outfitted for Modern Medical Eye Care */}
           <div className="bg-white border rounded-xl p-8 shadow-sm">
-            <h2 className="text-2xl font-bold mb-4">Our Team</h2>
-            <p className="text-slate-600 leading-relaxed mb-6">
-              Our doctors and staff are hospitable, knowledgeable, and genuinely invested in your
-              care. We believe the relationship between a patient and their doctor should feel human
-              — not rushed, not transactional. Each location operates with autonomy, empowering our
-              doctors and managers to make the best decisions for each patient on any given day.
-              What stays constant is our standard of care and our commitment to you.
+            <h2 className="text-2xl font-bold mb-4">Outfitted for Modern Medical Eye Care</h2>
+            <p className="text-slate-600 leading-relaxed">
+              Alongside industry-standard technology, Eyepro invests in advanced medical equipment
+              — including the Topcon Maestro 2 OCT — so that doctors can see as much of the
+              interior of the eye as needed to determine general health, make precise diagnoses, and
+              build effective treatment plans. Technology like fundus photography and anterior and
+              posterior segment OCT allows the team to detect conditions such as diabetic
+              retinopathy, ischemia, and glaucoma early on, when it matters most. Keeping pace
+              with modern medicine has been a cornerstone of Eyepro&apos;s growth.
             </p>
-            <Link
-              href="/team"
-              className="inline-flex items-center gap-2 text-eyepro-blue font-semibold hover:underline"
-            >
-              Meet our team <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
 
           {/* Our Locations */}
           <div className="bg-white border rounded-xl p-8 shadow-sm">
             <h2 className="text-2xl font-bold mb-2">Our Locations</h2>
             <p className="text-slate-600 mb-6">
-              We serve communities in Haymarket VA, Winchester VA, and Georgetown SC — with
-              convenient locations designed to be accessible to patients of all backgrounds.
+              Eyepro now operates locations across Northern Virginia and South Carolina, each one
+              grounded in the same founding principle: treat every patient like family.
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
               {locations.map((location) => (
@@ -115,9 +127,9 @@ export default function AboutPage() {
           <div className="bg-gradient-to-r from-eyepro-blue to-slate-700 rounded-xl p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-3">Come See Us</h2>
             <p className="text-slate-200 mb-6 max-w-xl mx-auto leading-relaxed">
-              Whether you are due for a routine exam, managing a chronic eye condition, or
-              exploring your options for vision correction, we are here. No pressure. No agenda.
-              Just good eye care from people who genuinely care.
+              Whether you are due for a routine exam, managing a chronic eye condition, or exploring
+              your options for vision correction — the team is here. No pressure. No agenda. Just
+              good eye care from people who genuinely care.
             </p>
             <Link
               href="/locations"
@@ -125,16 +137,6 @@ export default function AboutPage() {
             >
               Find a Location <ArrowRight className="w-4 h-4" />
             </Link>
-            <p className="text-slate-300 text-sm mt-6">
-              <a
-                href="https://reviewob.com/finding-best-practice-setting/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-white transition-colors"
-              >
-                Read our founder&apos;s story as featured in Review of Optometric Business
-              </a>
-            </p>
           </div>
 
         </div>
