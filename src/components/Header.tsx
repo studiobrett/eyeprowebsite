@@ -8,6 +8,7 @@ import { locations } from '@/data/locations';
 
 const navigation = [
   { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
   { name: 'Our Team', href: '/team' },
   { 
     name: 'Locations', 
