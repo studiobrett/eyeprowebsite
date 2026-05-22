@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Phone, Clock, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Clock, ArrowRight, Star } from 'lucide-react';
 import { locations, virginiaLocations, southCarolinaLocations } from '@/data/locations';
 import { JsonLd } from '@/components/JsonLd';
 import { locationSchema } from '@/lib/schema';
@@ -65,6 +65,17 @@ function LocationCard({ location }: { location: typeof virginiaLocations[0] }) {
           </a>
         )}
       </div>
+      {location.reviewUrl && (
+        <a
+          href={location.reviewUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 w-full flex items-center justify-center gap-2 border border-amber-400 text-amber-600 py-2 px-4 rounded-lg font-medium hover:bg-amber-50 transition-colors"
+        >
+          <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+          Leave Us a Review
+        </a>
+      )}
     </div>
   );
 }

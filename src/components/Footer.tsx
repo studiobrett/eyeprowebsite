@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone } from 'lucide-react';
+import { Phone, Star } from 'lucide-react';
 import { locations } from '@/data/locations';
 
 export function Footer() {
@@ -70,7 +70,25 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-8 pt-8 text-sm text-slate-400">
+        <div className="border-t border-slate-800 mt-8 pt-6 pb-4 text-sm text-slate-400 flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+          <Star className="w-4 h-4 fill-amber-400 text-amber-400 flex-shrink-0" />
+          <span>Love your experience? Leave us a review:</span>
+          <span className="flex gap-3 flex-wrap justify-center">
+            {locations.filter(l => l.reviewUrl).map((location) => (
+              <a
+                key={location.id}
+                href={location.reviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-amber-400 transition-colors"
+              >
+                {location.name}
+              </a>
+            ))}
+          </span>
+        </div>
+
+        <div className="border-t border-slate-800 pt-8 text-sm text-slate-400">
           <div className="flex flex-col md:flex-row justify-between gap-4">
             <p>&copy; {currentYear} Eyepro. All rights reserved.</p>
             <div className="flex gap-4">
