@@ -23,7 +23,7 @@ export default function HomePage() {
               Family-Owned<br />Community Eye Care
             </h1>
             <p className="text-xl italic text-slate-300 mb-8">
-              See more clearly. Live more fully.
+              See clearly. Live fully.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
