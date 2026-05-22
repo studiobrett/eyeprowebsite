@@ -4,6 +4,7 @@ import { Phone, MapPin, Clock, ArrowRight, Eye, Users, Stethoscope } from 'lucid
 import { locations, virginiaLocations, southCarolinaLocations } from '@/data/locations';
 import { services } from '@/data/services';
 import { team } from '@/data/team';
+import { Testimonials } from '@/components/Testimonials';
 
 export default function HomePage() {
   const featuredServices = services.slice(0, 3);
@@ -203,6 +204,8 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      <Testimonials />
 
       {/* LASIK CTA */}
       <section className="py-16 bg-slate-50">
