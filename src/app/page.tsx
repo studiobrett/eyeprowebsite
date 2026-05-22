@@ -43,6 +43,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Sunset hero image */}
+      <img src="/images/sunset-hero.jpg" alt="" className="w-full block" />
+
       {/* Locations Bar */}
       <section className="bg-slate-100 border-b">
         <div className="container-wide py-8">

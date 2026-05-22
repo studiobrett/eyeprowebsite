@@ -58,6 +58,9 @@ export default function AboutPage() {
             </div>
           </div>
 
+          {/* Forest path image */}
+          <img src="/images/forest-hero.jpg" alt="" className="w-full block rounded-xl" />
+
           {/* A Competitive Edge */}
           <div className="bg-slate-50 rounded-xl p-8">
             <h2 className="text-2xl font-bold mb-4">A Competitive Edge Rooted in Care</h2>
