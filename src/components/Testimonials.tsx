@@ -56,7 +56,7 @@ export function Testimonials() {
         setCurrent((prev) => (prev + 1) % testimonials.length);
         setVisible(true);
       }, 500);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
