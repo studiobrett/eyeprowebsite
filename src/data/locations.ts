@@ -34,7 +34,7 @@ export const locations: Location[] = [
       'Saturday': 'Closed',
       'Sunday': 'Closed',
     },
-    googleMapsUrl: 'https://maps.google.com/?q=6530+Trading+Square+Haymarket+VA+20169',
+    googleMapsUrl: 'https://maps.app.goo.gl/ngbnu68dCcMQUfWa7',
     region: 'virginia',
   },
   {
@@ -55,7 +55,7 @@ export const locations: Location[] = [
       'Saturday': 'Closed',
       'Sunday': 'Closed',
     },
-    googleMapsUrl: 'https://maps.google.com/?q=501+Walmart+Drive+Winchester+VA+22603',
+    googleMapsUrl: 'https://maps.app.goo.gl/yoTeXSwJ2ZURD5B16',
     region: 'virginia',
   },
   {
@@ -76,7 +76,7 @@ export const locations: Location[] = [
       'Saturday': '9:30 AM - 5:00 PM',
       'Sunday': 'Closed',
     },
-    googleMapsUrl: 'https://maps.google.com/?q=1334+N+Fraser+St+Georgetown+SC+29440',
+    googleMapsUrl: 'https://maps.app.goo.gl/4U46AwQ7o7j95Q6p7',
     region: 'south-carolina',
   },
 ];
