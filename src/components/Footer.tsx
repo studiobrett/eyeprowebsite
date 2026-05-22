@@ -22,8 +22,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm">
-              Trusted eye care serving Virginia and South Carolina. 
-              Conveniently located in Virginia and South Carolina.
+              Trusted medical eye care serving communities across Virginia and South Carolina.
             </p>
           </div>
 
