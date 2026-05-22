@@ -125,6 +125,16 @@ export default function AboutPage() {
             >
               Find a Location <ArrowRight className="w-4 h-4" />
             </Link>
+            <p className="text-slate-300 text-sm mt-6">
+              <a
+                href="https://reviewob.com/finding-best-practice-setting/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white transition-colors"
+              >
+                Read our founder&apos;s story as featured in Review of Optometric Business
+              </a>
+            </p>
           </div>
 
         </div>
