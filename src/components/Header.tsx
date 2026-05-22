@@ -16,6 +16,7 @@ const navigation = [
     children: locations.map(loc => ({ name: `${loc.name}, ${loc.stateAbbr}`, href: `/locations/${loc.id}` }))
   },
   { name: 'Services', href: '/services' },
+  { name: 'Technology', href: '/technology' },
   { name: 'Insurance', href: '/insurance' },
   { name: 'Contact', href: '/contact' },
 ];
