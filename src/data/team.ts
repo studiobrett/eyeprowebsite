@@ -12,7 +12,7 @@ export const team: TeamMember[] = [
   {
     id: 'dr-daniel-goerl',
     name: 'Dr. Daniel Goerl',
-    title: 'Optometrist',
+    title: 'Owner & Chief Optometrist',
     credentials: 'O.D.',
     bio: 'Dr. Goerl is a board-certified optometrist with over 25 years of experience. After building a trusted practice in Northern Virginia, he relocated to the South Carolina coast and now serves the Georgetown and Horry County communities. He brings the same commitment to medical precision and compassionate, patient-centered care that has defined his practice from the beginning.',
     image: '/images/DanielGoerl.webp',
