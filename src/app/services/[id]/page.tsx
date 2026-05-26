@@ -56,6 +56,30 @@ export default function ServicePage({ params }: { params: { id: string } }) {
             })}
           </div>
 
+          {service.partners && service.partners.length > 0 && (
+            <div className="mt-8">
+              <h2 className="text-2xl font-bold mb-4">Our Surgical Partners</h2>
+              <div className="space-y-4">
+                {service.partners.map((partner) => (
+                  <div key={partner.region} className="bg-slate-50 rounded-lg p-5 border">
+                    <p className="text-sm font-semibold text-eyepro-blue uppercase tracking-wide mb-1">{partner.region}</p>
+                    <p className="text-slate-700">
+                      {partner.description}{' '}
+                      <a
+                        href={partner.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-eyepro-blue hover:underline font-medium"
+                      >
+                        Learn more at {partner.linkText}
+                      </a>
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* CTA */}
           <div className="mt-8 pt-8 border-t">
             <div className="bg-slate-50 rounded-lg p-6">

@@ -1,9 +1,17 @@
+export interface ServicePartner {
+  region: string;
+  description: string;
+  url: string;
+  linkText: string;
+}
+
 export interface Service {
   id: string;
   name: string;
   shortDescription: string;
   description: string;
   icon?: string;
+  partners?: ServicePartner[];
 }
 
 export const services: Service[] = [
@@ -69,11 +77,24 @@ Dr. Daniel Goerl brings over two decades of experience to each evaluation, helpi
 
 Our LASIK co-management includes:
 - Pre-operative evaluation and candidacy assessment
-- Coordination with trusted surgeons
 - Five post-operative checkups
 - Ongoing monitoring of your results
 
 Save up to $1600 on LASIK with our co-management program.`,
+    partners: [
+      {
+        region: 'Virginia — Haymarket & Winchester',
+        description: 'We partner with Dr. Andrew Holzman of TLC Laser Eye Centers, one of the most trusted and experienced LASIK surgeons in the Washington DC area.',
+        url: 'https://www.drholzman.com',
+        linkText: 'drholzman.com',
+      },
+      {
+        region: 'South Carolina — Georgetown',
+        description: 'We partner with Carolina Eyecare Physicians, a leading ophthalmology group serving communities across South Carolina.',
+        url: 'https://www.carolinaeyecare.com',
+        linkText: 'carolinaeyecare.com',
+      },
+    ],
   },
   {
     id: 'eye-emergencies',
