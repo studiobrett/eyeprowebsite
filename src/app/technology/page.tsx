@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Eye, ScanLine, ShieldCheck } from 'lucide-react';
 
 export const metadata = {
@@ -21,6 +22,16 @@ export default function TechnologyPage() {
               in a single, comfortable scan — no dilation required in most cases.
             </p>
           </div>
+        </div>
+
+        <div className="mb-10">
+          <Image
+            src="/images/dr-goerl-technology.jpg"
+            alt="Dr. Daniel Goerl with advanced diagnostic equipment at Eyepro."
+            width={1200}
+            height={800}
+            className="w-full rounded-xl object-cover"
+          />
         </div>
 
         <div className="space-y-6">
