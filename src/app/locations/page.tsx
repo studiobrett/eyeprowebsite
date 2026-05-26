@@ -21,6 +21,9 @@ function LocationCard({ location }: { location: typeof virginiaLocations[0] }) {
           <div>
             <p>{location.address}</p>
             <p>{location.city}, {location.stateAbbr} {location.zip}</p>
+            {location.locationNote && (
+              <p className="text-slate-500 text-sm mt-1">{location.locationNote}</p>
+            )}
           </div>
         </div>
 

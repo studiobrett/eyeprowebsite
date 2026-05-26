@@ -56,6 +56,9 @@ export default function LocationPage({ params }: { params: { id: string } }) {
                 </h2>
                 <p>{location.address}</p>
                 <p>{location.city}, {location.stateAbbr} {location.zip}</p>
+                {location.locationNote && (
+                  <p className="text-slate-500 text-sm mt-1">{location.locationNote}</p>
+                )}
                 {location.googleMapsUrl && (
                   <a 
                     href={location.googleMapsUrl}

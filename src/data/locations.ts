@@ -11,6 +11,7 @@ export interface Location {
   hours: {
     [key: string]: string;
   };
+  locationNote?: string;
   googleMapsUrl?: string;
   reviewUrl?: string;
   facebookUrl?: string;
@@ -36,6 +37,7 @@ export const locations: Location[] = [
       'Saturday': 'Closed',
       'Sunday': 'Closed',
     },
+    locationNote: 'Inside Walmart Vision Center',
     googleMapsUrl: 'https://maps.app.goo.gl/ngbnu68dCcMQUfWa7',
     reviewUrl: 'https://g.page/r/CfEKX3Yknt2rEAE/review',
     facebookUrl: 'https://www.facebook.com/eyeprohaymarket/',
@@ -59,6 +61,7 @@ export const locations: Location[] = [
       'Saturday': 'Closed',
       'Sunday': 'Closed',
     },
+    locationNote: 'Inside Walmart Vision Center',
     googleMapsUrl: 'https://maps.app.goo.gl/yoTeXSwJ2ZURD5B16',
     reviewUrl: 'https://g.page/r/Cd--JRAHdIc6EAE/review',
     facebookUrl: 'https://www.facebook.com/eyeprowinchester/',
@@ -82,6 +85,7 @@ export const locations: Location[] = [
       'Saturday': '9:30 AM - 5:00 PM',
       'Sunday': 'Closed',
     },
+    locationNote: 'Inside Eyemart Express',
     googleMapsUrl: 'https://maps.app.goo.gl/4U46AwQ7o7j95Q6p7',
     reviewUrl: 'https://g.page/r/CWiH_EJyn4HPEAE/review',
     facebookUrl: 'https://www.facebook.com/people/Eyepro-Georgetown/61589240645547/',
