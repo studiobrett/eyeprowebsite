@@ -42,10 +42,14 @@ export default function TeamPage() {
                 )}
                 <div>
                   <h2 className="text-2xl font-bold mb-1">
-                    {member.name}, {member.credentials}
+                    {member.name}{member.credentials ? `, ${member.credentials}` : ''}
                   </h2>
                   <p className="text-eyepro-blue font-medium mb-4">{member.title}</p>
-                  <p className="text-slate-600 mb-6">{member.bio}</p>
+                  <div className="text-slate-600 mb-6 space-y-4">
+                    {member.bio.split('\n\n').map((paragraph, i) => (
+                      <p key={i}>{paragraph}</p>
+                    ))}
+                  </div>
                   
                   {member.specialties && member.specialties.length > 0 && (
                     <div>

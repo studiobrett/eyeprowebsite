@@ -82,7 +82,7 @@ export function physicianSchema(member: TeamMember) {
     '@context': 'https://schema.org',
     '@type': 'Physician',
     '@id': `${SITE_URL}/team#${member.id}`,
-    name: `${member.name}, ${member.credentials}`,
+    name: member.credentials ? `${member.name}, ${member.credentials}` : member.name,
     jobTitle: member.title,
     medicalSpecialty: 'Optometric',
     description: member.bio,
