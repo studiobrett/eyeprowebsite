@@ -3,6 +3,14 @@ import Image from 'next/image';
 import { Phone, Star } from 'lucide-react';
 import { locations } from '@/data/locations';
 
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.885v2.27h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+    </svg>
+  );
+}
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -54,9 +62,22 @@ export function Footer() {
             <ul className="space-y-4 text-sm">
               {locations.map((location) => (
                 <li key={location.id}>
-                  <Link href={`/locations/${location.id}`} className="hover:text-white transition-colors font-medium">
-                    {location.name}, {location.stateAbbr}
-                  </Link>
+                  <div className="flex items-center gap-2">
+                    <Link href={`/locations/${location.id}`} className="hover:text-white transition-colors font-medium">
+                      {location.name}, {location.stateAbbr}
+                    </Link>
+                    {location.facebookUrl && (
+                      <a
+                        href={location.facebookUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-400 hover:text-[#1877F2] transition-colors"
+                        aria-label={`${location.name} on Facebook`}
+                      >
+                        <FacebookIcon className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
                   <div className="flex items-center gap-1 mt-1">
                     <Phone className="w-3 h-3" />
                     <a href={`tel:${location.phone}`} className="hover:text-white transition-colors">

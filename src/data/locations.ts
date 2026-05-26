@@ -13,6 +13,7 @@ export interface Location {
   };
   googleMapsUrl?: string;
   reviewUrl?: string;
+  facebookUrl?: string;
   region: 'virginia' | 'south-carolina';
 }
 
@@ -37,6 +38,7 @@ export const locations: Location[] = [
     },
     googleMapsUrl: 'https://maps.app.goo.gl/ngbnu68dCcMQUfWa7',
     reviewUrl: 'https://g.page/r/CfEKX3Yknt2rEAE/review',
+    facebookUrl: 'https://www.facebook.com/eyeprohaymarket/',
     region: 'virginia',
   },
   {
@@ -59,6 +61,7 @@ export const locations: Location[] = [
     },
     googleMapsUrl: 'https://maps.app.goo.gl/yoTeXSwJ2ZURD5B16',
     reviewUrl: 'https://g.page/r/Cd--JRAHdIc6EAE/review',
+    facebookUrl: 'https://www.facebook.com/eyeprowinchester/',
     region: 'virginia',
   },
   {
@@ -81,6 +84,7 @@ export const locations: Location[] = [
     },
     googleMapsUrl: 'https://maps.app.goo.gl/4U46AwQ7o7j95Q6p7',
     reviewUrl: 'https://g.page/r/CWiH_EJyn4HPEAE/review',
+    facebookUrl: 'https://www.facebook.com/people/Eyepro-Georgetown/61589240645547/',
     region: 'south-carolina',
   },
 ];
