@@ -36,6 +36,34 @@ Since joining Eyepro in 2021, Tyler has led the expansion of the practice to mul
 For Tyler, Eyepro isn't just a family business — it's a continuation of a shared calling to serve communities with integrity, accessibility, and genuine human care.`,
     image: '/images/tyler-goerl.jpeg',
   },
+  {
+    id: 'dr-kayla-norton',
+    name: 'Dr. Kayla Norton',
+    title: 'Optometrist',
+    credentials: 'O.D.',
+    bio: `Dr. Kayla Norton earned her Bachelor's degree in Biology from Shippensburg University and her Doctor of Optometry from the Pennsylvania College of Optometry at Salus University. A primary care medical optometrist, she sees patients of all ages at Eyepro Haymarket, providing comprehensive eye exams, contact lens fittings, refractive surgery co-management, and ocular health evaluations. Dr. Norton believes that great eye care is built on strong relationships — she takes the time to know her patients and is committed to thorough, compassionate care at every visit. Outside the office she enjoys reading, playing tennis, spending time with her family, and volunteering at her church.`,
+    image: '/images/KaylaNortonOD.jpeg',
+    specialties: [
+      'Comprehensive Eye Exams',
+      'Contact Lens Fittings',
+      'Refractive Surgery Co-Management',
+      'Ocular Health Evaluations',
+    ],
+  },
+  {
+    id: 'dr-linda-hammer',
+    name: 'Dr. Linda Hammer',
+    title: 'Optometrist',
+    credentials: 'O.D.',
+    bio: `Dr. Linda Hammer brings more than 38 years of optometric experience to her patients at Eyepro Winchester — along with the kind of warmth that makes every exam feel like a visit with someone who genuinely cares. A graduate of Marshall B. Ketchum University and licensed in Virginia, she has practiced across Southern California and the greater Washington DC area, bringing a breadth of experience that few can match. Above all, Dr. Hammer believes that excellent eye care goes beyond the prescription — her priority is ensuring every patient feels heard, comfortable, and truly cared for, regardless of their background or health history. As a former colleague once said of her: "She has an exceptional way of making patients feel right at home — as if they are being taken care of by a family member."`,
+    image: '/images/LindaHammerOD.jpeg',
+    specialties: [
+      'Comprehensive Eye Exams',
+      'Contact Lens Fittings',
+      'Ocular Disease Management',
+      'Primary Care Optometry',
+    ],
+  },
 ];
 
 export function getTeamMember(id: string): TeamMember | undefined {
