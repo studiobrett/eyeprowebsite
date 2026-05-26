@@ -84,6 +84,9 @@ export function Footer() {
                       {location.phone}
                     </a>
                   </div>
+                  {location.locationNote && (
+                    <p className="text-slate-500 text-xs mt-1">{location.locationNote}</p>
+                  )}
                 </li>
               ))}
             </ul>
