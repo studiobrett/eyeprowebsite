@@ -129,17 +129,11 @@ export default function AboutPage() {
           {/* Come See Us CTA */}
           <div className="bg-gradient-to-r from-eyepro-blue to-slate-700 rounded-xl p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-3">Come See Us</h2>
-            <p className="text-slate-200 mb-6 max-w-xl mx-auto leading-relaxed">
-              Whether you are due for a routine exam, managing a chronic eye condition, or exploring
-              your options for vision correction — the team is here. No pressure. No agenda. Just
-              good eye care from people who genuinely care.
+            <p className="text-slate-200 max-w-xl mx-auto leading-relaxed">
+              Ready to experience the difference? We&apos;d love to hear from you. Give us a call — our
+              staff is here to answer your questions, help you navigate insurance, and get you
+              scheduled at a time that works for you.
             </p>
-            <Link
-              href="/locations"
-              className="inline-flex items-center gap-2 bg-white text-eyepro-blue px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
-            >
-              Find a Location <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
 
         </div>
