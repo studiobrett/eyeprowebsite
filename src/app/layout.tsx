@@ -18,11 +18,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eyeprova.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
-  description: 'Eyepro offers expert medical eye care across Virginia and South Carolina, providing comprehensive eye exams and eye disease treatment for patients of all ages.',
+  title: 'Eyepro | Eye Doctor in Northern Virginia & Georgetown, SC',
+  description: 'Family-owned eye care for every patient — with insurance or without. Comprehensive exams, contact lenses, LASIK co-management and more. Come experience the difference.',
   openGraph: {
-    title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
-    description: 'Eyepro offers expert medical eye care across Virginia and South Carolina, providing comprehensive eye exams and eye disease treatment for patients of all ages.',
+    title: 'Eyepro | Eye Doctor in Northern Virginia & Georgetown, SC',
+    description: 'Family-owned eye care for every patient — with insurance or without. Comprehensive exams, contact lenses, LASIK co-management and more. Come experience the difference.',
     url: siteUrl,
     siteName: 'Eyepro',
     images: [{ url: '/images/eyepro-logo.webp', width: 986, height: 600, alt: 'Eyepro' }],
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Eyepro | Eye Doctor in Haymarket, Winchester & Georgetown',
-    description: 'Eyepro offers expert medical eye care across Virginia and South Carolina, providing comprehensive eye exams and eye disease treatment for patients of all ages.',
+    title: 'Eyepro | Eye Doctor in Northern Virginia & Georgetown, SC',
+    description: 'Family-owned eye care for every patient — with insurance or without. Comprehensive exams, contact lenses, LASIK co-management and more. Come experience the difference.',
     images: ['/images/eyepro-logo.webp'],
   },
 };
