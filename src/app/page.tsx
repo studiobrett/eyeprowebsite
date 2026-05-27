@@ -194,7 +194,7 @@ export default function HomePage() {
                     {primaryDoctor.name}, {primaryDoctor.credentials}
                   </h2>
                   <p className="text-lg text-slate-200 mb-6">
-                    {primaryDoctor.bio}
+                    {primaryDoctor.bio.split('\n\n')[0]}
                   </p>
                   <Link
                     href="/team"
