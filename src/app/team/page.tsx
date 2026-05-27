@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { team } from '@/data/team';
 import { JsonLd } from '@/components/JsonLd';
 import { physicianSchema } from '@/lib/schema';
@@ -28,7 +29,7 @@ export default function TeamPage() {
             >
               <div className="md:flex gap-8">
                 {member.image && (
-                  <div className="flex-shrink-0 mb-6 md:mb-0">
+                  <div className="flex-shrink-0 mb-6 md:mb-0 flex flex-col items-center gap-4">
                     <div className="w-48 h-48 bg-slate-200 rounded-xl overflow-hidden relative">
                       <Image
                         src={member.image}
@@ -38,13 +39,21 @@ export default function TeamPage() {
                         className="object-cover"
                       />
                     </div>
+                    {member.locationHref && member.location && (
+                      <Link href={member.locationHref} className="btn-secondary text-sm px-4 py-2 w-48 justify-center">
+                        Visit Our {member.location.replace('Eyepro ', '')} Office
+                      </Link>
+                    )}
                   </div>
                 )}
                 <div>
                   <h2 className="text-2xl font-bold mb-1">
                     {member.name}{member.credentials ? `, ${member.credentials}` : ''}
                   </h2>
-                  <p className="text-eyepro-blue font-medium mb-4">{member.title}</p>
+                  <p className="text-eyepro-blue font-medium mb-1">{member.title}</p>
+                  {member.location && (
+                    <p className="text-slate-400 text-sm mb-4">{member.location}</p>
+                  )}
                   <div className="text-slate-600 mb-6 space-y-4">
                     {member.bio.split('\n\n').map((paragraph, i) => (
                       <p key={i}>{paragraph}</p>
