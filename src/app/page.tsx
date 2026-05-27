@@ -231,6 +231,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* What to Expect */}
+      <section className="py-16">
+        <div className="container-wide">
+          <div className="bg-amber-50 border border-amber-100 rounded-2xl p-10 text-center max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold mb-5">What to Expect</h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-8">
+              From the moment you walk in, you will begin to experience the difference in care.
+              Our front desk is not a checkpoint — it is the beginning of your experience with us.
+              Neighbors run into neighbors here, and strangers become new friends. Come as you are.
+            </p>
+            <Link
+              href="/what-to-expect"
+              className="inline-flex items-center gap-2 bg-eyepro-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-eyepro-blue/90 transition-colors"
+            >
+              Learn More <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Emergency Banner */}
       <section className="bg-red-50 border-y border-red-100">
         <div className="container-wide py-8">

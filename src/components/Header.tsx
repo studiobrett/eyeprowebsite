@@ -10,8 +10,9 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Our Team', href: '/team' },
-  { 
-    name: 'Locations', 
+  { name: 'What to Expect', href: '/what-to-expect' },
+  {
+    name: 'Locations',
     href: '/locations',
     children: locations.map(loc => ({ name: `${loc.name}, ${loc.stateAbbr}`, href: `/locations/${loc.id}` }))
   },
